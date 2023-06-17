@@ -21,7 +21,7 @@ class Player extends CObjectBase
 constructor(context:CanvasRenderingContext2D) {
     super(context);
         this.Sprite = new Image();
-        this.Sprite.src = "image24.png";
+        this.Sprite.src = "img/image24.png";
         this.SpriteBox = new Rectangle(0,0,80,80); 
         this.HitBox = new Rectangle(0,0,52.8,60);
         this.SourceBox = new Rectangle(0,0,400,400);

@@ -27,7 +27,7 @@ class Level extends CObjectBase
         this.player.InitialY = this.player.PositionY;
 
         let bg2 = new Image();
-        bg2.src = "bg2.jpg";
+        bg2.src = "img/bg2.jpg";
         let bgRepeatWidth = 384;
         let sourceBoxBG2 = new Rectangle(0,0,bgRepeatWidth,1080);
         this.background2 = new Background(this.Context,bg2,sourceBoxBG2);
@@ -37,7 +37,7 @@ class Level extends CObjectBase
         this.background2.PositionY = 0;
 
         let bg = new Image();
-        bg.src = "bg.png";
+        bg.src = "img/bg.png";
         bgRepeatWidth = 250;
         let sourceBoxBG = new Rectangle(0,0,bgRepeatWidth,24);
         this.background = new Background(this.Context,bg,sourceBoxBG);
@@ -50,7 +50,7 @@ class Level extends CObjectBase
         this.enemies = new Enemies(gameBounders,this.player);
 
         let enemySprite = new Image();
-        enemySprite.src = "missil.png";
+        enemySprite.src = "img/missil.png";
        
         let enemy = new Enemy(this.Context,enemySprite,new Rectangle(0,0,500,320));
         enemy.SpriteBox = new Rectangle(0,0,50,32);
